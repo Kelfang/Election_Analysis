@@ -51,31 +51,31 @@ I was provided with a .csv file that contained the Ballot ID, the county where t
  
  In this image, the code would loop through each row and collect the candidate names all while counting the vote. We would not have to manually identify the names listed within the data. 
  ```
-  # If the candidate does not match any existing candidate add it to the candidate list.
+  *# If the candidate does not match any existing candidate add it to the candidate list.*
   if candidate_name not in candidate_options:
 
-      # Add the candidate name to the candidate list.
+      *# Add the candidate name to the candidate list.*
       candidate_options.append(candidate_name)
 
-      # And begin tracking that candidate's voter count.
+      *# And begin tracking that candidate's voter count.*
       candidate_votes[candidate_name] = 0
 
-      # Add a vote to that candidate's count
+      *# Add a vote to that candidate's count.*
       candidate_votes[candidate_name] += 1
       
 ```
  Additionally, similar to the image above, this is where we could change the location of where the votes are being counted. We could substitute cities or states here as well. These modest changes make the code very mallable for any kind of election, without completely rewriting the code. 
 ```
-  # Write an if statement that checks that the county does not match any existing county in the county list.
+  *# Write an if statement that checks that the county does not match any existing county in the county list.*
   if county_name not in counties_list:
 
-      # Add the existing county to the list of counties.
+      *# Add the existing county to the list of counties.*
       counties_list.append(county_name)
 
-      # Begin tracking the county's vote count.
+      *# Begin tracking the county's vote count.*
       county_votes[county_name] = 0
 
-      # Add a vote to that county's vote count.
+      *# Add a vote to that county's vote count.*
       county_votes[county_name] += 1
 ```
 
