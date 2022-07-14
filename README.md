@@ -79,10 +79,6 @@ I was provided with a .csv file that contained the Ballot ID, the county where t
       county_votes[county_name] += 1
 ```
 
-## Challenge Overview
-The most important aspect was to maintain the integrity of the data; to ensure that each vote was counted and counted correctly. 
-
-
-## Challenge Summary
+## Final Thoughts
 This was a straightforward assignment that did not pose any significant challenges. By using Python and Visual Studio Code, we were able to read the data and process the counts with 100% accuracy. In addition, these resources generated the outcome immediately and the code easily outlines the steps taken to retrieve the results. This kind of transparency is imperative when auditing election results. 
 
