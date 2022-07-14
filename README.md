@@ -51,7 +51,7 @@ I was provided with a .csv file that contained the Ballot ID, the county where t
  
  In this image, the code would loop through each row and collect the candidate names all while counting the vote. We would not have to manually identify the names listed within the data. 
  ```
-  *# If the candidate does not match any existing candidate add it to the candidate list.*
+  # 𝘐𝘧 𝘵𝘩𝘦 𝘤𝘢𝘯𝘥𝘪𝘥𝘢𝘵𝘦 𝘥𝘰𝘦𝘴 𝘯𝘰𝘵 𝘮𝘢𝘵𝘤𝘩 𝘢𝘯𝘺 𝘦𝘹𝘪𝘴𝘵𝘪𝘯𝘨 𝘤𝘢𝘯𝘥𝘪𝘥𝘢𝘵𝘦 𝘢𝘥𝘥 𝘪𝘵 𝘵𝘰 𝘵𝘩𝘦 𝘤𝘢𝘯𝘥𝘪𝘥𝘢𝘵𝘦 𝘭𝘪𝘴𝘵.
   if candidate_name not in candidate_options:
 
       *# Add the candidate name to the candidate list.*
