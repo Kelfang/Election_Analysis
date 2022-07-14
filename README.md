@@ -64,7 +64,21 @@ I was provided with a .csv file that contained the Ballot ID, the county where t
       candidate_votes[candidate_name] += 1
       
 ```
- 
+ Additionally, similar to the image above, this is where we could change the location of where the votes are being counted. We could substitute cities or states here as well. These modest changes make the code very mallable for any kind of election, without completely rewriting the code. 
+```
+  # Write an if statement that checks that the county does not match any existing county in the county list.
+  if county_name not in counties_list:
+
+      # Add the existing county to the list of counties.
+      counties_list.append(county_name)
+
+      # Begin tracking the county's vote count.
+      county_votes[county_name] = 0
+
+      # Add a vote to that county's vote count.
+      county_votes[county_name] += 1
+```
+
 ## Challenge Overview
 The most important aspect was to maintain the integrity of the data; to ensure that each vote was counted and counted correctly. 
 
