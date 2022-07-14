@@ -54,28 +54,28 @@ I was provided with a .csv file that contained the Ballot ID, the county where t
   # 𝘐𝘧 𝘵𝘩𝘦 𝘤𝘢𝘯𝘥𝘪𝘥𝘢𝘵𝘦 𝘥𝘰𝘦𝘴 𝘯𝘰𝘵 𝘮𝘢𝘵𝘤𝘩 𝘢𝘯𝘺 𝘦𝘹𝘪𝘴𝘵𝘪𝘯𝘨 𝘤𝘢𝘯𝘥𝘪𝘥𝘢𝘵𝘦 𝘢𝘥𝘥 𝘪𝘵 𝘵𝘰 𝘵𝘩𝘦 𝘤𝘢𝘯𝘥𝘪𝘥𝘢𝘵𝘦 𝘭𝘪𝘴𝘵.
   if candidate_name not in candidate_options:
 
-      *# Add the candidate name to the candidate list.*
+      # 𝘈𝘥𝘥 𝘵𝘩𝘦 𝘤𝘢𝘯𝘥𝘪𝘥𝘢𝘵𝘦 𝘯𝘢𝘮𝘦 𝘵𝘰 𝘵𝘩𝘦 𝘤𝘢𝘯𝘥𝘪𝘥𝘢𝘵𝘦 𝘭𝘪𝘴𝘵. 
       candidate_options.append(candidate_name)
 
-      *# And begin tracking that candidate's voter count.*
+      # 𝘈𝘯𝘥 𝘣𝘦𝘨𝘪𝘯 𝘵𝘳𝘢𝘤𝘬𝘪𝘯𝘨 𝘵𝘩𝘢𝘵 𝘤𝘢𝘯𝘥𝘪𝘥𝘢𝘵𝘦'𝘴 𝘷𝘰𝘵𝘦𝘳 𝘤𝘰𝘶𝘯𝘵.
       candidate_votes[candidate_name] = 0
 
-      *# Add a vote to that candidate's count.*
+      # 𝘈𝘥𝘥 𝘢 𝘷𝘰𝘵𝘦 𝘵𝘰 𝘵𝘩𝘢𝘵 𝘤𝘢𝘯𝘥𝘪𝘥𝘢𝘵𝘦'𝘴 𝘤𝘰𝘶𝘯𝘵. 
       candidate_votes[candidate_name] += 1
       
 ```
  Additionally, similar to the image above, this is where we could change the location of where the votes are being counted. We could substitute cities or states here as well. These modest changes make the code very mallable for any kind of election, without completely rewriting the code. 
 ```
-  *# Write an if statement that checks that the county does not match any existing county in the county list.*
+  # 𝘞𝘳𝘪𝘵𝘦 𝘢𝘯 𝘪𝘧 𝘴𝘵𝘢𝘵𝘦𝘮𝘦𝘯𝘵 𝘵𝘩𝘢𝘵 𝘤𝘩𝘦𝘤𝘬𝘴 𝘵𝘩𝘢𝘵 𝘵𝘩𝘦 𝘤𝘰𝘶𝘯𝘵𝘺 𝘥𝘰𝘦𝘴 𝘯𝘰𝘵 𝘮𝘢𝘵𝘤𝘩 𝘢𝘯𝘺 𝘦𝘹𝘪𝘴𝘵𝘪𝘯𝘨 𝘤𝘰𝘶𝘯𝘵𝘺 𝘪𝘯 𝘵𝘩𝘦 𝘤𝘰𝘶𝘯𝘵𝘺 𝘭𝘪𝘴𝘵.
   if county_name not in counties_list:
 
-      *# Add the existing county to the list of counties.*
+      # 𝘈𝘥𝘥 𝘵𝘩𝘦 𝘦𝘹𝘪𝘴𝘵𝘪𝘯𝘨 𝘤𝘰𝘶𝘯𝘵𝘺 𝘵𝘰 𝘵𝘩𝘦 𝘭𝘪𝘴𝘵 𝘰𝘧 𝘤𝘰𝘶𝘯𝘵𝘪𝘦𝘴.
       counties_list.append(county_name)
 
-      *# Begin tracking the county's vote count.*
+      # 𝘉𝘦𝘨𝘪𝘯 𝘵𝘳𝘢𝘤𝘬𝘪𝘯𝘨 𝘵𝘩𝘦 𝘤𝘰𝘶𝘯𝘵𝘺'𝘴 𝘷𝘰𝘵𝘦 𝘤𝘰𝘶𝘯𝘵.
       county_votes[county_name] = 0
 
-      *# Add a vote to that county's vote count.*
+      # 𝘈𝘥𝘥 𝘢 𝘷𝘰𝘵𝘦 𝘵𝘰 𝘵𝘩𝘢𝘵 𝘤𝘰𝘶𝘯𝘵𝘺'𝘴 𝘷𝘰𝘵𝘦 𝘤𝘰𝘶𝘯𝘵.
       county_votes[county_name] += 1
 ```
 
