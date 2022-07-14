@@ -44,7 +44,7 @@ I was provided with a .csv file that contained the Ballot ID, the county where t
   - The winner of the election was:
 	  - Diana DeGette received 73.8% of the vote with a vote count of 272,892.
  ------------------------------------------------------
- A link to the raw output of data can be found [here](https://github.com/Kelfang/Election_Analysis/blob/main/analysis/election_results.txt)
+ A link to the raw output of data can be found [here](https://github.com/Kelfang/Election_Analysis/blob/main/analysis/election_results.txt).
  
 ## Challenge Overview
 The most important aspect was to maintain the integrity of the data; to ensure that each vote was counted and counted correctly. 
