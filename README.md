@@ -51,18 +51,18 @@ I was provided with a .csv file that contained the Ballot ID, the county where t
  
  In this image, the code would loop through each row and collect the candidate names all while counting the vote. We would not have to manually identify the names listed within the data. 
  ```
-  # If the candidate does not match any existing candidate add it to
-        # the candidate list
-        if candidate_name not in candidate_options:
+  # If the candidate does not match any existing candidate add it to the candidate list.
+  if candidate_name not in candidate_options:
 
-            # Add the candidate name to the candidate list.
-            candidate_options.append(candidate_name)
+      # Add the candidate name to the candidate list.
+      candidate_options.append(candidate_name)
 
-            # And begin tracking that candidate's voter count.
-            candidate_votes[candidate_name] = 0
+      # And begin tracking that candidate's voter count.
+      candidate_votes[candidate_name] = 0
 
-        # Add a vote to that candidate's count
-        candidate_votes[candidate_name] += 1
+      # Add a vote to that candidate's count
+      candidate_votes[candidate_name] += 1
+      
 ```
  
 ## Challenge Overview
