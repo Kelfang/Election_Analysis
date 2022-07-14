@@ -47,7 +47,23 @@ I was provided with a .csv file that contained the Ballot ID, the county where t
  A link to the raw output of the Election Results can be found [here](https://github.com/Kelfang/Election_Analysis/blob/main/analysis/election_results.txt).
  
  ### Election Audit Summary
+ The code that was used to determine the outcome of this election is written in such a way that it can easily be modified and used in other elections, regardless of location or number of votes. In the images below I have indicated two places where the code could be adjusted to accommodate other elections.
  
+ In this image, the code would loop through each row and collect the candidate names all while counting the vote. We would not have to manually identify the names listed within the data. 
+ ```
+  # If the candidate does not match any existing candidate add it to
+        # the candidate list
+        if candidate_name not in candidate_options:
+
+            # Add the candidate name to the candidate list.
+            candidate_options.append(candidate_name)
+
+            # And begin tracking that candidate's voter count.
+            candidate_votes[candidate_name] = 0
+
+        # Add a vote to that candidate's count
+        candidate_votes[candidate_name] += 1
+```
  
 ## Challenge Overview
 The most important aspect was to maintain the integrity of the data; to ensure that each vote was counted and counted correctly. 
