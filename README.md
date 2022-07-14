@@ -21,11 +21,16 @@ The purpose of this project was to assist the Colorado Board of Elections with t
 I was provided with a .csv file that contained the Ballot ID, the county where the vote was cast, and the Candidate's name. The Ballot ID is an unique 6-digit number that was assigned to each vote within the file and is tied to a single unknown resident in the pertinent county. This ensured that there were no duplicate votes listed (or counted) in the analysis of this election. 
 
 The analysis of the election is outlined below:
+
 - There were 369,711 votes cast in this election.
+------------------------------------------------------	
   - The counties and vote counts within this audit:
   	  - Arapahoe: 24,801 votes (6.7%)
 	  - Denver: 306,055 votes (82.8%)
-	  - Jefferson: 
+	  - Jefferson: 38,855 votes (10.5%)
+ ------------------------------------------------------	  
+  - The county with the largest voter turnout: Denver
+  ------------------------------------------------------	
   - The candidates were:
 	  - Charles Casper Stockham
 	  - Diana DeGette
