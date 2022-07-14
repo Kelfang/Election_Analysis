@@ -49,7 +49,7 @@ I was provided with a .csv file that contained the Ballot ID, the county where t
  ### Election Audit Summary
  The code that was used to determine the outcome of this election is written in such a way that it can easily be modified and used in other elections, regardless of location or number of votes. In the images below I have indicated two places where the code could be adjusted to accommodate other elections.
  
- In this image, the code would loop through each row and collect the candidate names all while counting the vote. We would not have to manually identify the names listed within the data. 
+ In the first image, the code would "read" each row and collect the candidate names all while counting each vote and storing the vote counts as it works through the file. We would not have to manually input the names listed within the data. 
  ```
   # 𝘐𝘧 𝘵𝘩𝘦 𝘤𝘢𝘯𝘥𝘪𝘥𝘢𝘵𝘦 𝘥𝘰𝘦𝘴 𝘯𝘰𝘵 𝘮𝘢𝘵𝘤𝘩 𝘢𝘯𝘺 𝘦𝘹𝘪𝘴𝘵𝘪𝘯𝘨 𝘤𝘢𝘯𝘥𝘪𝘥𝘢𝘵𝘦 𝘢𝘥𝘥 𝘪𝘵 𝘵𝘰 𝘵𝘩𝘦 𝘤𝘢𝘯𝘥𝘪𝘥𝘢𝘵𝘦 𝘭𝘪𝘴𝘵.
   if candidate_name not in candidate_options:
@@ -64,7 +64,7 @@ I was provided with a .csv file that contained the Ballot ID, the county where t
       candidate_votes[candidate_name] += 1
       
 ```
- Additionally, similar to the image above, this is where we could change the location of where the votes are being counted. We could substitute cities or states here as well. These modest changes make the code very mallable for any kind of election, without completely rewriting the code. 
+ Additionally, in the image below we could change the location of where the votes are being counted. This would only require substituting county for city, state, or district. These modest changes make the code very mallable for any kind of election, while maintaining the performance and integrity of the code.
 ```
   # 𝘞𝘳𝘪𝘵𝘦 𝘢𝘯 𝘪𝘧 𝘴𝘵𝘢𝘵𝘦𝘮𝘦𝘯𝘵 𝘵𝘩𝘢𝘵 𝘤𝘩𝘦𝘤𝘬𝘴 𝘵𝘩𝘢𝘵 𝘵𝘩𝘦 𝘤𝘰𝘶𝘯𝘵𝘺 𝘥𝘰𝘦𝘴 𝘯𝘰𝘵 𝘮𝘢𝘵𝘤𝘩 𝘢𝘯𝘺 𝘦𝘹𝘪𝘴𝘵𝘪𝘯𝘨 𝘤𝘰𝘶𝘯𝘵𝘺 𝘪𝘯 𝘵𝘩𝘦 𝘤𝘰𝘶𝘯𝘵𝘺 𝘭𝘪𝘴𝘵.
   if county_name not in counties_list:
