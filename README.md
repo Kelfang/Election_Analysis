@@ -64,7 +64,7 @@ I was provided with a .csv file that contained the Ballot ID, the county where t
       candidate_votes[candidate_name] += 1
       
 ```
- Additionally, in the image below we could change the location of where the votes are being counted. This would only require substituting county for city, state, or district. These modest changes make the code very mallable for any kind of election, while maintaining the performance and integrity of the code.
+ Additionally, in the image below, we could change the location of where the votes are being counted. This would only require substituting county for city, state, or district. These modest changes make the code very mallable for any kind of election, while maintaining the performance and integrity of the code.
 ```
   # 𝘞𝘳𝘪𝘵𝘦 𝘢𝘯 𝘪𝘧 𝘴𝘵𝘢𝘵𝘦𝘮𝘦𝘯𝘵 𝘵𝘩𝘢𝘵 𝘤𝘩𝘦𝘤𝘬𝘴 𝘵𝘩𝘢𝘵 𝘵𝘩𝘦 𝘤𝘰𝘶𝘯𝘵𝘺 𝘥𝘰𝘦𝘴 𝘯𝘰𝘵 𝘮𝘢𝘵𝘤𝘩 𝘢𝘯𝘺 𝘦𝘹𝘪𝘴𝘵𝘪𝘯𝘨 𝘤𝘰𝘶𝘯𝘵𝘺 𝘪𝘯 𝘵𝘩𝘦 𝘤𝘰𝘶𝘯𝘵𝘺 𝘭𝘪𝘴𝘵.
   if county_name not in counties_list:
