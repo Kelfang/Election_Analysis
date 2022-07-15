@@ -49,7 +49,7 @@ I was provided with a .csv file that contained the Ballot ID, the county where t
  ### Election Audit Summary
  The code that was used to determine the outcome of this election is written in such a way that it can easily be modified and used in other elections, regardless of location or number of votes. In the images below I have indicated two places where the code could be adjusted to accommodate other elections.
  
- In the first image, the code "reads" each row and collect the candidate names all while counting each vote and storing the vote counts as it works through the file. We would not have to manually input the names listed within the data. This instills confidence that no candidate would be missed, regardless of how many votes.
+ In the first image, the code "reads" each row and collect the candidate names all while counting each vote and storing the vote counts as it works through the file. We would not have to manually input the names listed within the data. This instills confidence that no candidate would be missed, regardless of vote count.
  ```
   # 𝘐𝘧 𝘵𝘩𝘦 𝘤𝘢𝘯𝘥𝘪𝘥𝘢𝘵𝘦 𝘥𝘰𝘦𝘴 𝘯𝘰𝘵 𝘮𝘢𝘵𝘤𝘩 𝘢𝘯𝘺 𝘦𝘹𝘪𝘴𝘵𝘪𝘯𝘨 𝘤𝘢𝘯𝘥𝘪𝘥𝘢𝘵𝘦 𝘢𝘥𝘥 𝘪𝘵 𝘵𝘰 𝘵𝘩𝘦 𝘤𝘢𝘯𝘥𝘪𝘥𝘢𝘵𝘦 𝘭𝘪𝘴𝘵.
   if candidate_name not in candidate_options:
